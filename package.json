@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "push": "git add ."
+    "push": "git status && git add . && git commit -m 'totoTest' && git push -u origin master"
   },
   "private": true,
   "dependencies": {
