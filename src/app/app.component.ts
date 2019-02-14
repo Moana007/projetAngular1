@@ -15,9 +15,11 @@ export class AppComponent {
 
   onRatingUserName(newUserName: string) {
     console.log("parent=>" + newUserName);
+    this.userName = newUserName;
   }
   onRatingLastName(newLastName: string) {
     console.log("parent=>" + newLastName);
+    this.lastName = newLastName;
   }
   constructor() {
 

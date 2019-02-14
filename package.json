@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "push1": "git status && git add . && git commit -m",
-    "push2": "git push -u origin master'"
+    "p1": "git status && git add . && git commit -m",
+    "p2": "git push -u origin master"
   },
   "private": true,
   "dependencies": {
