@@ -18,8 +18,12 @@ export class FirstComponent implements OnInit, OnChanges {
     return this.appareilStatus;
   }
   notifyUserName() {
-    console.log(this.userName);
+    //propagation de la variable (userName)
     this.ratingUserName.emit(this.userName);
+  }
+  notifyLastName() {
+    //propagation de la variable (lastName)
+    this.ratingLastName.emit(this.lastName);
   }
 
   ngOnChanges(): void {

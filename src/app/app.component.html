@@ -32,8 +32,8 @@
     <div class="col-xs-12">
       <ul class="list-group">
         <!-- <app-first userName="{{userName}}" lastName="{{lastName}}"></app-first> -->
-        <app-first [userName]="userName" [lastName]="lastName" (ratingUserName)="onRatingUserNameClicked($event);"
-          (ratingLastName)="onRatingLastNameClicked($event);"></app-first> <!-- [] propertybyname // () Event binding-->
+        <app-first [userName]="userName" [lastName]="lastName" (ratingUserName)="onRatingUserName($event);"
+          (ratingLastName)="onRatingLastName($event);"></app-first> <!-- [] propertybyname // () Event binding-->
       </ul>
     </div>
   </div>

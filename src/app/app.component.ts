@@ -13,7 +13,12 @@ export class AppComponent {
   userName: string = "Ryan";
   lastName: string = "gbd";
 
-
+  onRatingUserName(newUserName: string) {
+    console.log("parent=>" + newUserName);
+  }
+  onRatingLastName(newLastName: string) {
+    console.log("parent=>" + newLastName);
+  }
   constructor() {
 
   }
