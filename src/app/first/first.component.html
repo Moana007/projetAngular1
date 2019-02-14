@@ -1,3 +1,8 @@
-<p>
-  firstComponent works!
-</p>
+<li class="list-group-item">
+  <p>User : {{userName}} {{lastName}}</p>
+  <label>Nom</label>
+  <input type="text" class="form-control" [(ngModel)]=userName (keyup)="notifyUserName();" />
+
+  <label>Prenom</label>
+  <input type="text" class="form-control" [(ngModel)]=lastName (keyup)="notifyLastName();" />
+</li>

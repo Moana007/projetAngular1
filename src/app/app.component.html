@@ -12,7 +12,6 @@
       <ul class="list-group">
         <app-appareil></app-appareil>
         <app-appareil></app-appareil>
-        <app-appareil></app-appareil>
       </ul>
     </div>
   </div>
@@ -26,5 +25,21 @@
 </ul>
 
 <app-form-user></app-form-user>
-<app-first></app-first>
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <!-- <app-first userName="{{userName}}" lastName="{{lastName}}"></app-first> -->
+        <app-first [userName]="userName" [lastName]="lastName" (ratingUserName)="onRatingUserNameClicked($event);"
+          (ratingLastName)="onRatingLastNameClicked($event);"></app-first> <!-- [] propertybyname // () Event binding-->
+      </ul>
+    </div>
+  </div>
+</div>
+<br>
+
+<p>test input()=> {{ userName }} {{lastName}}</p>
+
 <router-outlet></router-outlet>

@@ -19,7 +19,7 @@ export class User {
         return this._age;
     }
     public set nom(value: string) {
-        this._nom = value;
+        this._nom = value; //toUpercase
     }
     public set prenom(value: string) {
         this._prenom = value;

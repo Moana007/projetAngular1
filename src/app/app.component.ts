@@ -10,6 +10,10 @@ export class AppComponent {
   title: string = 'Guillaume';
   heroes: string[] = ["Toto", "Titi", "Tata", "Tete"];
 
+  userName: string = "Ryan";
+  lastName: string = "gbd";
+
+
   constructor() {
 
   }
