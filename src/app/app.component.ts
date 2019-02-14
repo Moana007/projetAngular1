@@ -7,51 +7,55 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'Guillaume';
+  title: string = 'Guillaume';
+  heroes: string[] = ["Toto", "Titi", "Tata", "Tete"];
 
   constructor() {
 
-    let toto: any
+  }
+
+  /*   let toto: any
     toto = "titi"
     toto = 1
     toto = true
-
+ 
     let liste: any[] = ["Adrien", false, 123]
     let isDone: string = undefined
     let tab0: number[] = [-1, 3, 2]
     tab0.push(45.1)
-
+ 
     enum Fruit { 'banane', "ananas" }
-    let k: Fruit.banane
+    let k: Fruit = Fruit.ananas;
     let s: string
-
+    //console.log(k);
+ 
     let uneValeur: any = "Peut etre une chaine ?"
     let longeur: number = (<string>uneValeur).length
-
+ 
     let autreValeur: string = "123"
     let newVal: number = autreValeur.toString().length;
-
+ 
     let x = 1;
     let y = 3;
     let z = 29;
     [x, y] = [z, x]; //z = 29 / x = 29
     //console.log(z, x);
-
+ 
     let o = { a: "foo", b: "toto", c: 12, i: "Johan" };
     let { a, b, c, i } = o;
     //console.log(a, b, c, i)
-
+ 
     let res1: number = this.doAddition(5);
     let res2: number = this.doAddition2(5, 6, 10, 30, 60);
     //console.log(res2);
-
-
+ 
+ 
     let t = new Bonjour("Salut a qqlin mais qui !?", "Moana", 26);
-    t.affiche();
-
+    //t.affiche();
+ 
   }
-
-
+ 
+ 
   doAddition(x: number, y: number = 0, z?: number): number {
     return x + y;
   }
@@ -69,12 +73,11 @@ export class AppComponent {
   }
   tools3(): number {
     return 2;
-  }
+  } */
 
 } // End AppComponent
 
-
-class Bonjour {
+/* class Bonjour {
   private _message: string;
   private _userName: string;
   private _userAge: number;
@@ -110,6 +113,6 @@ class Bonjour {
   affiche() {
     console.log("Bonjour " + this.message);
   }
-}
+} */
 
 

@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="col-md-12 row">
+    <form class="col-md-5 formUser">
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="email" class="form-control" id="nom" name="nom" placeholder="Votre nom" [(ngModel)]="user.nom">
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prenom</label>
+        <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre prenom"
+          [(ngModel)]="user.prenom">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="text" class="form-control" id="age" name="age" placeholder="0" [(ngModel)]="user.age">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="validationButton()">Submit</button>
+    </form>
+    <div class="col-md-7">
+      <h4>Recapitulatif :</h4>
+      <ul>
+        <li>Nom : {{ user.nom }}</li>
+        <li>Prenom : {{ user.prenom }}</li>
+        <li>Age : {{ user.age }} ans</li>
+      </ul>
+      <ul class="listUser">
+        <li *ngFor="let item of listUser; let i = index">
+          {{i+1}}: {{ item.nom }}
+          <button type="submit" class="btn btn-danger" (click)="supprUser(item)">X</button>
+          <button type="submit" class="btn btn-danger" (click)="editUser(item)">Edit</button>
+
+        </li>
+        <li *ngIf="listUser.length == 0">Aucun User</li>
+      </ul>
+    </div>
+  </div>
+</div>

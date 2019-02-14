@@ -4,23 +4,23 @@ export class Bonjour {
     private _userAge: number;
 
 
+    public get message(): string {
+        return this._message;
+    }
     public get userName(): string {
         return this._userName;
-    }
-    public set userName(value: string) {
-        this._userName = value;
     }
     public get userAge(): number {
         return this._userAge;
     }
-    public set userAge(value: number) {
-        this._userAge = value;
-    }
-    public get message(): string {
-        return this._message;
-    }
     public set message(value: string) {
         this._message = value;
+    }
+    public set userName(value: string) {
+        this._userName = value;
+    }
+    public set userAge(value: number) {
+        this._userAge = value;
     }
 
 
